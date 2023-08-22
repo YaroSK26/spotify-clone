@@ -208,7 +208,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
         
       {/* Mobile player */}
       <div className="flex flex-col md:hidden h-full">
-        <div className="flex w-full items-center">
+        <div className="flex w-full items-center justify-center">
           <div className="flex items-center gap-x-4">
             <MediaItem data={song} />
             <LikeButton songId={song.id} />
@@ -231,7 +231,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
                 rounded-full 
                 bg-white 
                 p-1 
-                cursor-pointer
+                cursor-pointer 
               "
             >
               <Icon size={25} className="text-black" />

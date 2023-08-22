@@ -8,7 +8,6 @@ import UserProvider from '@/providers/UserProvider'
 import ModalProvider from '@/providers/ModalProvider'
 import SupabaseProvider from '@/providers/SupabaseProvider'
 import Player from '@/components/Player'
-import { CrispProvider } from '@/providers/CrispProvider'
 
 import './globals.css'
 
@@ -33,7 +32,6 @@ export default async function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ToasterProvider />
-        <CrispProvider/>
         <SupabaseProvider>
           <UserProvider>
             <ModalProvider products={products} />
