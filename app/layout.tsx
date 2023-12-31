@@ -8,6 +8,7 @@ import UserProvider from '@/providers/UserProvider'
 import ModalProvider from '@/providers/ModalProvider'
 import SupabaseProvider from '@/providers/SupabaseProvider'
 import Player from '@/components/Player'
+import { CrispProvider } from "@/components/CrispProvider";
 
 import './globals.css'
 
@@ -39,6 +40,7 @@ export default async function RootLayout({
               {children}
             </Sidebar>
             <Player />
+            <CrispProvider />
           </UserProvider>
         </SupabaseProvider>
       </body>
